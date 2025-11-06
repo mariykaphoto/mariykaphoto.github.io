@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mariyka Photographer</title>
+<style>
+    /* Стили всего сайта */
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: Arial, sans-serif;
+        color: #fff;
+    }
+    body {
+        /* Здесь временный фон — позже заменишь на свою работу */
+        background-image: url('https://via.placeholder.com/1920x1080/000000/ffffff?text=Your+Photo+Here');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .overlay {
+        background-color: rgba(0,0,0,0.6);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+    }
+    h1 {
+        font-size: 3em;
+        margin-bottom: 0.2em;
+    }
+    .instagram {
+        margin-bottom: 2em;
+    }
+    .instagram img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    iframe {
+        border: none;
+        width: 90%;
+        max-width: 800px;
+        height: 600px;
+        border-radius: 10px;
+    }
+    @media (max-width: 800px) {
+        h1 { font-size: 2em; }
+        iframe { height: 400px; }
+    }
+</style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="content">
+        <h1>Mariyka Photographer</h1>
+        <div class="instagram">
+            <a href="https://www.instagram.com/r.mariyka10?igsh=ajcwaGhrbXpxaWx3&utm_source=qr" target="_blank">
+                <img src="https://instagram.com/r.mariyka10/profile_pic" alt="Mariyka Instagram">
+                @r.mariyka10
+            </a>
+        </div>
+        <!-- Google Calendar вставляется сюда -->
+        <iframe src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_LINK&ctz=Europe/Moscow"></iframe>
+    </div>
+</body>
+</html>
