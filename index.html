@@ -4,17 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mariyka Photographer</title>
+
+<!-- М’який шрифт -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
 <style>
-    /* Стили всего сайта */
     body, html {
         margin: 0;
         padding: 0;
         height: 100%;
-        font-family: Arial, sans-serif;
+        font-family: 'Poppins', sans-serif;
         color: #fff;
     }
     body {
-        /* Здесь временный фон — позже заменишь на свою работу */
         background-image: url('https://i.imgur.com/VLbFAag.jpeg');
         background-size: cover;
         background-position: center;
@@ -41,9 +43,20 @@
     h1 {
         font-size: 3em;
         margin-bottom: 0.2em;
+        font-weight: 500;
+        letter-spacing: 2px;
     }
-    .instagram {
-        margin-bottom: 2em;
+    .instagram, .contacts {
+        margin-bottom: 1.5em;
+    }
+    .instagram a {
+        text-decoration: none;
+        color: #fff; /* біла лінка */
+        font-weight: 300;
+        transition: color 0.3s;
+    }
+    .instagram a:hover {
+        color: #ccc; /* м’який сірий при наведенні */
     }
     .instagram img {
         width: 60px;
@@ -51,6 +64,17 @@
         border-radius: 50%;
         vertical-align: middle;
         margin-right: 10px;
+    }
+    .contacts p {
+        margin: 0.2em 0;
+        font-weight: 300;
+    }
+    .contacts a {
+        color: white;
+        text-decoration: none;
+    }
+    .contacts a:hover {
+        text-decoration: underline;
     }
     iframe {
         border: none;
@@ -69,21 +93,28 @@
     <div class="overlay"></div>
     <div class="content">
         <h1>Mariyka Photographer</h1>
+
         <div class="instagram">
             <a href="https://www.instagram.com/r.mariyka10?igsh=ajcwaGhrbXpxaWx3&utm_source=qr" target="_blank">
                 <img src="https://instagram.com/r.mariyka10/profile_pic" alt="Mariyka Instagram">
                 @r.mariyka10
             </a>
         </div>
-        <!-- Google Calendar вставляется сюда -->
-<iframe 
-  src="https://calendar.google.com/calendar/embed?src=467dd63734aa462f0ac0c667dfbb057dd3edbbbcfafe22fb952b2e21ebf0aa26%40group.calendar.google.com&ctz=Europe%2FWarsaw" 
-  style="border:0" 
-  width="800" 
-  height="600" 
-  frameborder="0" 
-  scrolling="no">
-</iframe>
+
+        <div class="contacts">
+            <p>Email: <a href="mailto:r.mariyka09@gmail.com">r.mariyka09@gmail.com</a></p>
+            <p>Phone: <a href="tel:+48729651941">+48 729 651 941</a></p>
+        </div>
+
+        <!-- Google Calendar -->
+        <iframe 
+          src="https://calendar.google.com/calendar/embed?src=467dd63734aa462f0ac0c667dfbb057dd3edbbbcfafe22fb952b2e21ebf0aa26%40group.calendar.google.com&ctz=Europe%2FWarsaw" 
+          style="border:0" 
+          width="800" 
+          height="600" 
+          frameborder="0" 
+          scrolling="no">
+        </iframe>
     </div>
 </body>
 </html>
